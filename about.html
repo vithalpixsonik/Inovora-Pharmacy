@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pharmacy  Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<style>
+
+</style>
+</head>
+<body>
+    <div id="main">
+ <!-- menubar -->
+ <div id="menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: transparent !important"> 
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="width: 30%" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" style="margin-left: 60%">
+            <li class="nav-item" id="link">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" id="link">
+              <a class="nav-link" href="product.html">Products</a>
+            </li>
+            <li class="nav-item active" id="link">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item" id="link">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <script>
+        
+        </script>
+      </nav>
+<script>
+$(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('#menu').css('background-color','#fafafa');
+            } else {
+              $('#menu').css('background-color','#fff');
+            }
+        });
+</script>
+</div>
+<!-- Menubar End -->
+
+<script>
+    $(window).scroll(function() {
+                    if ($(document).scrollTop() > 50) {
+                        $('#menu').css('background-color','#fafafa');
+                    } else {
+                      $('#menu').css('background-color','#fff');
+                    }
+                });
+    </script>
+
+<!-- Menubar End -->
+
+
+<!-- Banner -->
+<div id="fixed-navbar" style="position: fixed;top: 0;z-index: 10;height: 60px;width: 100%;margin: 0;padding: 0">
+    <a href="index.html"> <img src="img/logo.png" style="width: 32%;margin-top: 2%;margin-left: 5%" alt=""></a>
+     
+     <div id="mySidenav" class="sidenav">
+             
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                     <a href="index.html" id="homes">Home</a>
+                     <a href="product.html" id="do">Products</a>
+                     <a href="about.html" id="abt">About Us</a>
+                     <a href="contact.html" id="contact">Contact</a>
+                   </div>
+                   
+                   <span id="hamburger" style="font-size:30px;cursor:pointer;position:fixed;right:5%;color: black;top: 2%" onclick="openNav()">&#9776;</span>
+                   
+                   <script>
+                   function openNav() {
+                     document.getElementById("mySidenav").style.width = "250px";
+                   }
+                   
+                   function closeNav() {
+                     document.getElementById("mySidenav").style.width = "0";
+                   }
+                   </script>
+                   <script>
+                   $(window).scroll(function() {    
+                     var scroll = $(window).scrollTop();
+                     if (scroll >= 50) {
+                             $("#fixed-navbar").addClass("bg");
+                     }
+                     else{
+                             $("#fixed-navbar").removeClass("bg");
+                     }
+                     });
+                   </script>
+</div>
+
+
+
+  
+<!-- About Us -->
+ <div id="about" style="margin-bottom: 5%;margin-top: 8%">
+    <div class="row" style="margin: 0;padding: 0">
+      <div class="col-lg-1">
+
+      </div> 
+      <div class="col-lg-5">
+          <img id="about-image" src="img/n2.jpg" alt="">
+         
+        </div>
+        <div class="col-lg-6 col-xs-6">
+            <p id="head1" style="font-family: 'Muli', sans-serif;;font-size: 28px;margin-left:2%">About Us</p>
+            <hr id="hr1" style="background-color: #368f5a ;color: #368f5a;height: 3px;width: 22%;margin-left: 2%;margin-top: -2%">
+          <p id="about-paragraph" style="font-family: 'Roboto Condensed', sans-serif;margin-top: 3%;width: 80%;font-size: 17px;text-align: justify;margin-left: 2%">
+              Inovora Resources is an integrated growing health care company established with the purpose of serving the community, is aiming to become one of the fastest growing pharmaceutical export company in India.
+              Inovora Resources through its associates, Manufactures & Markets Pharmaceutical Raw materials, Drug Intermediates, & Finished Formulations maintaining quality at par with best in the world and thereby vying for brand equity in the global context.
+              Acomplete healthcare concern, Inovora Resources is using research-based technology to contribute towards the health of people around the world with superior products Contract manufactured in state-of-art facilities under strict GMP/CGMP/ISO compliance.
+                 
+          </p>
+        </div>
+      </div>
+ </div>
+
+
+<!-- Vision -->
+<div id="vision" style="margin-bottom: 5%">
+    <div class="row" style="margin: 0;padding: 0">
+      <div class="col-lg-12 col-xs-12">
+          <p id="head2" style="font-family: 'Muli', sans-serif;font-size: 28px;margin-top: 2%;text-align:left;margin-left: 12%">Our Vision</p>
+         <hr id="hr2" style="background-color: #368f5a ;color: #368f5a;height: 3px;width: 12%;margin-top: -1%;float: left;margin-left: 12%"><br>
+        <p id="abt-p" style="font-family: 'Roboto Condensed', sans-serif;width: 75%;text-align: justify;font-size: 17px;margin-left: 12%">
+            To become a global pharmaceutical export company within next five years, by providing a range of international quality products at competitive prices through integration, research &
+            development. We will achieve our vision by working closely with our partners, Company's representing us in various countries and companies supplying us their products.
+            Our ultimate goal aim is to provide Affordable, Latest and High Quality Finished Formulations, Pharmaceutical Raw Materials, Intermediates & Chemicals which will benefit the end customer. Our main customers are our partners involved in distribution of our products. We ensure that they enjoy a competitive edge with respect to their competitors and their profitability is ensured throughout our partnership.        
+        </p>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- Geographic Presence -->
+    <div>
+        <p id="geo1" style="font-family: 'Muli', sans-serif;font-size: 22px;margin-top: 5%;text-align:left;margin-left: 12%">Our Geographic Presence</p>
+     <hr id="gio-hr1" style="background-color: #368f5a ;color: #368f5a;height: 3px;width: 18%;margin-top: -1%;float: left;margin-left: 12%">
+     <br>
+<div id="location">
+
+    <div class="row" id="desktop-color-map" style="width: 75%;margin: 0;padding: 0;margin-left: 20%">
+
+        <div class="col-lg-4 col-xs-6">
+          <table id="country">
+            <tr >
+              <td>
+                  <div style="width:20px;height:20px;background-color: #e9a35e;"></div>
+              </td>
+              <td style="width: auto">
+                  <span style="font-family: 'Roboto Condensed', sans-serif;">West Africa</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-4 col-xs-6">
+            <table id="country">
+              <tr>
+                <td>
+                    <div style="width:20px;height:20px;background-color: #e1e95e;"></div>
+                </td>
+                <td style="width: auto">
+                    <span style="font-family: 'Roboto Condensed', sans-serif;">Ivory Coast</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        
+          <div class="col-lg-4 col-xs-6">
+              <table id="country">
+                <tr>
+                  <td>
+                      <div style="width:20px;height:20px;background-color: #78e874"></div>
+                  </td>
+                  <td style="width: auto">
+                      <span style="font-family: 'Roboto Condensed', sans-serif;">Egypt</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            
+            <div class="col-lg-4 col-xs-6">
+                <table id="country">
+                  <tr>
+                    <td>
+                        <div style="width:20px;height:20px;background-color: #eb4f86;"></div>
+                    </td>
+                    <td style="width: auto">
+                        <span style="font-family: 'Roboto Condensed', sans-serif;">Middle East Countries</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+           
+            <div class="col-lg-4 col-xs-6">
+                <table id="country">
+                  <tr>
+                    <td>
+                        <div style="width:20px;height:20px;background-color: #574feb"></div>
+                    </td>
+                    <td style="width: auto">
+                        <span style="font-family: 'Roboto Condensed', sans-serif;">SriLanka</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            
+              <div class="col-lg-4 col-xs-6">
+                  <table id="country">
+                    <tr>
+                      <td>
+                          <div style="width:20px;height:20px;background-color: #ea81e4"></div>
+                      </td>
+                      <td style="width: auto">
+                          <span style="font-family: 'Roboto Condensed', sans-serif;">Myanmar</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                
+ 
+
+        </div>
+        <center> <img src="img/mobile-map.png" style="width:90%" id="mob" alt=""></center>
+     <br><br>
+            <center>
+<img id="maps" src="img/maps.jpg" style="width: 75%" alt=""></center>
+  </div>
+</div>
+<br><br>
+
+<!-- Footer -->
+<div id="footer" style="background-color: #164553 ;padding-top: 2%;">
+    <div class="row" style="margin: 0;padding: 0">
+        <div class="col-lg-3">
+            <p style="font-size: 18px;color: #f4f4f4;font-family: 'Roboto', sans-serif;">Inovora Resourced Pvt Ltd</p>
+            <p style="font-size: 15px;font-family: 'Roboto', sans-serif;color: #f4f4f4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis reiciendis nostrum enim possimus nihil, minus ab omnis animi reprehenderit voluptatibus distinctio sequi vitae incidunt deserunt, ratione sint eaque! Magnam, dicta?</p>
+        </div>
+      <div class="col-lg-3" style="padding: 1%">
+        
+       <ul style="list-style-type: none;color: #f4f4f4;font-family: 'Roboto', sans-serif;">
+          <li style="font-size: 18px;text-decoration: underline;text-underline-position: under;margin-bottom: 2%">Geographic Presence</li>
+         <li style="font-size: 15px">Middle East Countries</li>
+         <li style="font-size: 15px">Myanmar</li>
+         <li style="font-size: 15px">Srilanka</li>
+         <li style="font-size: 15px">Egypt</li>
+         <li style="font-size: 15px">West Africa</li>
+         <li style="font-size: 15px">Ivory Coast</li>
+       </ul>
+      </div>
+      
+        <div class="col-lg-3"  style="padding: 1%">
+            <ul style="list-style-type: none;color: #f4f4f4;font-family: 'Roboto', sans-serif;">
+                <li style="font-size: 18px;text-decoration: underline;text-underline-position: under;margin-bottom: 2%">Pages</li>
+               <li style="font-size: 15px">Home</li>
+               <li style="font-size: 15px">Products</li>
+               <li style="font-size: 15px">About Us</li>
+               <li style="font-size: 15px">Contact</li>
+             </ul>
+          </div>
+          <div class="col-lg-3"  style="padding: 1%">
+              <ul style="list-style-type: none;color: #f4f4f4;font-family: 'Roboto', sans-serif;">
+                  <li style="font-size: 18px;text-decoration: underline;text-underline-position: under;margin-bottom: 2%">Social Media</li>
+                 <li style="font-size: 15px">Facebook</li>
+                 <li style="font-size: 15px">Instagram</li>
+                 <li style="font-size: 15px">Twitter</li>
+                 <li style="font-size: 15px">Gmail</li>
+               </ul>
+            </div>
+    </div> 
+    <br>
+    <div class="row" style="margin: 0;padding: 0;background-color: #1b4b5a">
+    <div class="col-lg-6"  style="padding: 1%"> 
+      <br>
+      <p style="font-family: 'Roboto', sans-serif;font-size: 16px;color: white">&#169; Inovora Resources Pvt Ltd</p>
+    </div>
+    <div class="col-lg-6">
+      <br>
+        <p style="font-family: 'Roboto', sans-serif;font-size: 13px;text-align: right;color: white">made by pixsonik</p>
+      </div>
+    </div>
+    </div>
+            </div>
+        </body>
+        </html>

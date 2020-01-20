@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pharmacy  Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<style>
+
+</style>
+</head>
+<body>
+    <div id="main">
+ <!-- menubar -->
+ <div id="menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: transparent !important"> 
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="width: 30%" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" style="margin-left: 60%">
+            <li class="nav-item" id="link">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active" id="link">
+              <a class="nav-link" href="product.html">Products</a>
+            </li>
+            <li class="nav-item" id="link">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item" id="link">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<script>
+$(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('#menu').css('background-color','#fafafa');
+            } else {
+              $('#menu').css('background-color','#fff');
+            }
+        });
+</script>
+</div>
+<!-- Menubar End -->
+
+<script>
+    $(window).scroll(function() {
+                    if ($(document).scrollTop() > 50) {
+                        $('#menu').css('background-color','#fafafa');
+                    } else {
+                      $('#menu').css('background-color','#fff');
+                    }
+                });
+    </script>
+
+<!-- Menubar End -->
+<div id="fixed-navbar" style="position: fixed;top: 0;z-index: 10;height: 60px;width: 100%;margin: 0;padding: 0">
+        <a href="index.html"> <img src="img/logo.png" style="width: 32%;margin-top: 2%;margin-left: 5%" alt=""></a>
+         
+         <div id="mySidenav" class="sidenav">
+                 
+                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                         <a href="index.html" id="homes">Home</a>
+                     <a href="product.html" id="do">Products</a>
+                     <a href="about.html" id="abt">About Us</a>
+                     <a href="contact.html" id="contact">Contact</a>
+                       </div>
+                       
+                       <span id="hamburger" style="font-size:30px;cursor:pointer;position:fixed;right:5%;color: black;top: 2%" onclick="openNav()">&#9776;</span>
+                       
+                       <script>
+                            function openNav() {
+                                document.getElementById("mySidenav").style.width = "250px";
+                            }
+                            
+                            function closeNav() {
+                                document.getElementById("mySidenav").style.width = "0";
+                            }
+                       </script>
+                       <script>
+                            $(window).scroll(function() {    
+                                var scroll = $(window).scrollTop();
+                                if (scroll >= 50) {
+                                        $("#fixed-navbar").addClass("bg");
+                                }
+                                else{
+                                        $("#fixed-navbar").removeClass("bg");
+                                }
+                                });
+                       </script>
+    </div>
+
+<!-- Banner -->
+<!-- Banner -->
+
+
+
+
+   <!-- Products -->
+<div id="product">
+    <h4 id="product-head1" style="margin-top: 8%;margin-bottom: 2%;text-align: left;margin-left: 2%;font-family: 'Muli', sans-serif;">Our Products</h4>
+    <hr id="product-hr1" style="background-color: #368f5a ;color: #368f5a;height: 4px;width: 11%;margin-left: 2%;margin-top: -1%">
+    <br>
+
+  <div class="row" style="margin: 0;">
+      <div class="col-lg-2" style="padding: 1%">
+          <center><div class="card" style="width: 95%;height: 120px"><br><br>
+       <p id="prod-cat" style="font-family: 'Muli', sans-serif;font-size: 17px;">Finished Formulations</p>
+       <br>
+      </div></center>
+      </div>
+
+      <div class="col-lg-2" style="padding: 1%">
+          <center>  <div class="card" style="width: 95%"><br>
+     <br>
+       <p id="prod-cat" style="font-family: 'Muli', sans-serif;font-size: 17px;">Anti-Cancer Drugs</p>
+       <br>
+      </div></center>
+      </div>
+
+      <div class="col-lg-2" style="padding: 1%">
+          <center>  <div class="card" style="width: 95%"><br>
+   
+       <p id="prod-cat" style="font-family: 'Muli', sans-serif;font-size: 17px;">Intermediates And Chemicals</p>
+       <br>
+      </div></center>
+      </div>
+
+      <div class="col-lg-2" style="padding: 1%">
+          <center>  <div class="card" style="width: 95%"><br>
+    
+       <p id="prod-cat" style="font-family: 'Muli', sans-serif;font-size: 17px;">Pharmaceutical Raw Material</p>
+       <br>
+      </div></center>
+      </div>
+
+    
+
+  
+        <div class="col-lg-2" style="padding: 1%">
+            <center>  <div class="card" style="width: 95%"><br>
+       
+         <p id="prod-cat" style="font-family: 'Muli', sans-serif;font-size: 17px;">Veterinary Pharmaceutical</p>
+         <br>
+        </div></center>
+        </div>
+  
+        <div class="col-lg-2" style="padding: 1%">
+            <center>  <div class="card" style="width: 95%;"><br>
+         <p id="prod-cat" style="font-family: 'Muli', sans-serif;font-size: 17px;">Gastro Intestinal Products</p>
+         <br>
+        </div></center>
+      
+      </div></div>
+
+</div>
+
+
+<div id="product-mobile">
+        <h4 id="product-head1" style="margin-top: 8%;margin-bottom: 2%;text-align: left;margin-left: 2%;font-family: 'Muli', sans-serif;">Our Products</h4>
+        <hr id="product-hr1" style="background-color: #368f5a ;color: #368f5a;height: 4px;width: 11%;margin-left: 2%;margin-top: -1%">
+        <br>
+    
+      <div class="row" style="margin: 0;">
+          <div class="col-lg-2" style="padding: 1%">
+              <center><div  style="width: 95%;"><hr>
+           <p id="prod-cat" style="font-family: 'Muli', sans-serif;font-size: 17px;">Finished Formulations</p>
+         <hr>
+          </div></center>
+          </div>
+    
+          <div class="col-lg-2"  style="padding: 1%">
+              <center>  <div style="width: 95%"><hr>
+           <p id="prod-cat" style="font-family: 'Muli', sans-serif;font-size: 17px;">Anti-Cancer Drugs</p>
+          <hr>
+          </div></center>
+          </div>
+    
+          <div class="col-lg-2"  style="padding: 1%">
+              <center>  <div  style="width: 95%"><hr>
+       
+           <p id="prod-cat" style="font-family: 'Muli', sans-serif;font-size: 17px;">Intermediates And Chemicals</p>
+           <hr>
+          </div></center>
+          </div>
+    
+          <div class="col-lg-2"  style="padding: 1%">
+              <center>  <div style="width: 95%"><hr>
+        
+           <p id="prod-cat" style="font-family: 'Muli', sans-serif;font-size: 17px;">Pharmaceutical Raw Material</p>
+          <hr>
+          </div></center>
+          </div>
+    
+        
+    
+      
+            <div class="col-lg-2"  style="padding: 1%">
+                <center>  <div  style="width: 95%"><hr>
+             <p id="prod-cat" style="font-family: 'Muli', sans-serif;font-size: 17px;">Veterinary Pharmaceutical</p>
+            <hr>
+            </div></center>
+            </div>
+      
+            <div class="col-lg-2"  style="padding: 1%">
+                <center>  <div  style="width: 95%;"><hr>
+             <p id="prod-cat" style="font-family: 'Muli', sans-serif;font-size: 17px;">Gastro Intestinal Products</p>
+           <hr>
+            </div></center>
+          
+          </div></div>
+    
+    </div>
+
+
+<!-- product-list-->
+
+<div id="list" style="margin-top: 5%;margin-bottom: 5%">
+    <h4 id="product-head2"  style="margin-top: 5%;margin-bottom: 2%;text-align: left;margin-left: 2%;font-family: 'Muli', sans-serif;">Products List</h4>
+    <hr id="product-hr2"  style="background-color: #368f5a ;color: #368f5a;height: 4px;width: 11%;margin-left: 2%;margin-top: -1%">
+    <br>
+
+  <div class="row" style="margin: 0;padding: 0">
+    <div class="col-lg-12">
+      <div id="p-card" class="card" style="width: 70%">  
+       <p id="type-1" style="font-family: 'Muli', sans-serif;font-size: 19px;margin-left: 4%;margin-top: 1%">Sustained And Immediate Release Pellets <span class="heading" style="position: absolute;right: 3%"><i id="icon1" class="fa fa-plus" style="text-align: right" aria-hidden="true"></i></span></p>
+        <div class="p">
+          <ul id="medicine-list" style="list-style-type:none;padding: 1%">
+            <li> Aprepitant IR Pellets 35%/40%</li><hr>
+            <li> Atorvastain IR Pellets 10%/20% w/w</li> <hr>
+            <li> Azathioprine DC Granules 50% w/w</li> <hr>
+            <li> Budesonide EC Pellets 0.9% w/w</li> <hr>
+              <li>Carvedilol Phosphate SR Pellets 7%/20%/21% w/w</li> <hr>
+              <li>Celecoxib IR Pellets 50%/55% w/w</li> <hr>
+              <li>Cilostazol SR Pellets 50% w/w</li> <hr>
+              <li>Cyclobenzaprine SR Pellets 7.5%/15% w/w</li> <hr>
+              <li>Desloratadine IR Pellets 5%/10% w/w</li> <hr>
+              <li>Diclofenac Sodium EC & SR Pellets 40% w/w</li> <hr>
+              <li>Didanosine EC Pellets 60% w/w</li> <hr>
+              <li>Dimethyl Fumerate Pellets 120/240mg</li> <hr>
+              <li>Dipyridamole SR Pellets 40% + Aspirin IR Pellets 51% w/w</li> <hr>
+              <li>Divalproxen Sodium ER Pellets 54.04% w/w</li> <hr>
+              <li>Domperidone IR & SR Pellets 20% w/w</li> <hr>
+              <li>Doxylamine Succinate DR 10% + Pyridoxine HCL DR Pellets 10% w/w</li> <hr>
+              <li>Doxylamine Succinate DR 10% + Pyridoxine HCL DR Pellets 10% w/w</li> <hr>
+              <li>Duloxetine Base / HCL EC Pellets 14.85%/17%/20% w/w</li> <hr>
+              <li>Dutasteride IR Pellets 0.5% w/w</li> <hr>
+              <li>Ezetimib 10mg ICW Rosuvastatin 10/20/40mg / Atorvastatin 20/10mg Pellets</li> <hr>
+              <li>Fenofibrate IR/SR Pellets 56% / 66.23% / 75% w/w ICW Rosuvastatin 10% w/w</li> <hr>
+              <li>Fenofibric acid IR Pellets 37.77% w/w</li> <hr>
+              <li>Fexofinadine IR Pellets 60 %w/w</li> <hr>
+              <li>Fingolimode Pellets 0.5mg</li> <hr>
+              <li>Flurbiprofen SR Pellets 60% / 88.90% w/w & IR Pellets 40% w/w</li> <hr>
+              <li>Fluvastatin Sodium IR Pellets 15% and SR Pellets 23% w/w</li> <hr>
+              <li>Galantamine HBr SR Pellet 8% w/w USP</li> <hr>
+              <li>Itopride IR/SR Pellets 60% w/w</li><hr> 
+              <li>Itraconazole Pellets 22% & 35% w/w ICW Secnidazole IR Pellets</li> <hr>
+              <li>Ketoprofen SR Pellets 60 %/70 Y%w/w USP</li> <hr>
+              <li>Levocetirizine Di HCL IR Pellets 5% / 7.5% w/w</li> <hr>
+              <li>Levomilnacipran SR Pellets 25% w/w</li> <hr>
+              <li>Levosulpride SR Pellets 50% w/w</li> <hr>
+              <li>Linaclotide IR Pellets 145/290mcg</li> <hr>
+              <li>Mebeverine HCL SR Pellets 60% / 69% / 80% w/w</li> <hr>
+              <li>Meloxicam Pellets 7.5mg/15mg</li> <hr>
+              <li>Memantine HCL IR/SR Pellets 5/7/10/14/21/28mg ICW Donepezil IR 5/10mg</li> <hr>
+              <li>Mentha Piperita Pellets 50% w/w</li> <hr>
+              <li>Mesalamine EC Pellets 75% w/w</li> <hr>
+              <li>Metoprolol Succinate SR Pellets 65% w/w</li><hr> 
+              <li>Minocycline HCL IR/SR Pellets 35% w/w</li> <hr>
+              <li>Mycophenolate Mofetil IR Pellets 90% w/w</li> <hr>
+              <li>Mycophenolic Acid DR Pellets 60% w/w</li> <hr>
+              <li>Mycophenolic Acid DR Pellets 60% w/w</li> <hr>
+              <li>Orlistat Pellets 38%/50% w/w USP/IN HOUSE</li> <hr>
+              <li>Oseltamivir Pellets 75mg</li> <hr>
+              <li>Oxybutynin SR pellets 5.55 % w/w</li> <hr>
+              <li>Pancreatin Pellets 10000/25000 IU</li> <hr>
+              <li>Phenylepherine HCL SR Pellets 10% w/w</li> <hr>
+              <li>Pinaverium Bromide IR Pellets 35% w/w</li> <hr>
+              <li>Piridinol Mesylate 4mg ICW Diclofenac SR 50mg / Meloxicame 15mg Pellets</li> <hr>
+              <li>Pregabalin IR/SR Pellets 25%/50%/75% w/w ICW Vitamin B12</li> <hr>
+              <li>Racecadotril Granules 40% w/w</li> <hr>
+              <li>Sertraline IR Pellets 25% / 50% w/w</li> <hr>
+              <li>Tacrolimus IR/SR Pellets 0.5/1/5mg</li> <hr>
+              <li>Tadalafil IR Pellets for 10/20mg</li> <hr>
+              <li>Tamsulosin Hcl SR Pellets ICW Dutasteride IR Pellets / Finasteride Pellets</li> <hr>
+              <li>Tamsulosin Hcl SR Pellets ICW Tadalafil IR Pellets / Tolterodine SR Pellets</li> <hr>
+              <li>Telmisartan IR Pellets ICW HCTZ IR Pellets / Amlodipine IR Pellets 5%/10%</li> <hr>
+              <li>Thiocolchicoside IR / SR Pellet 4% / 20% w/w</li> <hr>
+              <li>Tolterodine L-Tartrate SR Pellets 0.75%/ 1.5% / 2.1% w/w</li> <hr>
+              <li>Tramadol HCL SR Pellets 60% / 65% w/w</li> <hr>
+              <li>Ursodeoxycholic Acid IR/SR Pellets</li> <hr>
+              <li>Venlafaxine HCI SR Pellets 32% & 50% w/w</li> 
+                            
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" style="margin: 0;padding: 0;margin-top: 3%">
+    <div class="col-lg-12">
+      <div id="p-card" class="card" style="width: 70%">  
+       <p id="type-1" style="font-family: 'Muli', sans-serif;font-size: 19px;margin-left: 4%;padding: 1%;margin-top: 1%">Finished Products<span class="heading1" style="position: absolute;right: 3%"><i id="icon2" class="fa fa-plus" style="text-align: right;margin-top: 1%;" aria-hidden="true"></i></span></p>
+        <div class="p1">
+          <ul id="medicine-list" style="list-style-type:none;padding: 1%" >
+          <table id="finished-product">
+            <tr>
+              <td>
+                <li>Alzheimer’s Disease</li>
+              </td>
+              <td>
+               <li>Donepezil Tablets 5/10mg</li>
+               <li>Galantamine Hydrobromide ER Capsule 8/16/24mg</li>
+               <li>Memantine HCL SR 7 - 28mg ICW Donepezil IR/SR 5mg Capsules</li>
+               <li>Memantine Tablets 5/10mg</li>
+               <hr>
+              </td>
+            </tr>
+
+         
+
+            <tr>
+                <td>
+                  <li>Analgesic</li>
+                </td>
+                <td>
+                 <li>Paracetamol 125/250/500mg ICW Tramadol 37.5mg Tablets</li>
+                 <li>Paracetamol OD Tablets 125/250/500mg</li>
+                 <li>Tramadol HCL IR/SR Capsules 50/100/150/200mg</li>
+                 <li>Tramadol IR 25mg ICW Diclofenac Sodium EC 25mg Capsules</li> 
+                 <hr> 
+                </td>
+                
+              </tr>
+              
+              <tr>
+                  <td>
+                    <li>Anti - Fungal</li>
+                    <br>
+                  </td>
+                  <td>
+                    <li></li>
+                   <li>Itraconazole Capsules 100/200mg</li>
+                   <li></li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <br>
+                    <li>Anti - Hyperlipidimic</li><br>
+                  </td>
+                  <td>
+                     <li> Atorvastatin Tablets 10/20mg</li>
+                     <li>Ezetimib 10mg ICW Atorvastatin 10/20mg Capsules/Tablets</li>
+                     <li>Ezetimib 10mg ICW Rosuvastatin 10/20/40mg</li>
+                     <li>Fenofibrate 200mg ICW Rosuvastatin 10/20/40mg Capsules</li>
+                     <li> Fenofibrate Tablets/Capsules 145/200mg & SR 250mg</li>
+                     <li>Fenofibric Acid DR Capsules 45/135mg</li>
+                     <li>Fluvastatin Sodium IR Capsules 20/40mg & SR 80mg</li>
+                     <li> Rosuvastatin Calcium Tablets 5/10/20/40mg</li>
+                     <li>Simvastatin Tablets 10/20/40mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Biotic</li>
+                  </td>
+                  <td>
+                    <li>  Azithromycin Tablets 250mg/500mg</li>
+                    <li>Ciprofloxacin Tablets 250/500/1000mg</li>
+                    <li>Clarithromycin Tablets 250/500mg</li>
+                    <li>Minocycline IR/SR Capsules 50mg/100mg</li>
+                    <li>Moxifloxacin Tablets 400mg</li>
+                    <li>Nitrofurantoin IR/SR Capsules 100mg</li>
+                      
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - BPH</li>
+                  </td>
+                  <td>
+                    <li>Alfuzosin HCI SR Tablet 10mg</li>  
+                    <li>Tamsulosin HCL SR Capsules 0.2/0.4mg</li>  
+                    <li> ICW</li>  
+                    <li>Dutasteride Capsules 0.5mg</li>  
+                    <li>Finasteride Capsules 1/5mg</li>  
+                    <li>Tadalafil Capsules 5/10/20mg</li>  
+                    <li> Tolteridone Tartrate SR Capsules 2/4mg</li>  
+                      
+                      
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Coagulant</li>
+                    <br>
+                  </td>
+                  <td>
+                   <li>Acenocoumarol Tablet 1/2/4mg</li>   
+                   <li>Rivaroxaban IR Tablets 10/15/20mg</li>     
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Convulsant</li>
+                    <br>
+                  </td>
+                  <td>
+                     <li>Divalproxen Sodium ER Capsules 250/500mg</li> 
+                     <li>Lamotrigine Tablets 50/100mg</li>  
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Depressant</li>
+                  </td>
+                  <td>
+                      <li>Duloxetine HCL EC Capsules 30/60mg</li>
+                      <li>Escitalopram Tablets 10/20mg</li>
+                      <li>Levomilnacipran SR Pellets 40/80/120mg</li>
+                      <li>Paroxetine HCL Tablets 5/10/20mg</li>
+                      <li>Sertraline Hydrochloride Capsules/Tablets 50/100mg</li>
+                      <li>Trazodone Hydrochloride Tablet USP 50/100mg</li>   
+                      <hr>
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Diabetic</li>
+                  </td>
+                  <td>
+                      <li>Acarbose Tablet 50/100mg</li>
+                      <li>Glimepiride 2mg ICW Metformin 500mg Tablets</li>
+                      <li>Metformin IR Tablets 500/850mg/1 gm</li>
+                      <li>Metformin SR Tablets 500/750/850mg/1 gm</li> 
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Diarrheal</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Racecadotril Capsules 100mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Emetic</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Aprepitant Capsule 80,125mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Epileptic</li>
+                  </td>
+                  <td>
+                      <li>Gabapentin Capsules 100/300/400mg</li>
+                      <li>Levetiracetam IR Tablets 250/500mg</li>
+                      <li>Levetiracetam ER Tablets 250/500/750/1000mg</li>
+                      <li>Oxcarbazepine Tablets 150/300mg</li>
+                      <li>Pregabalin IR/SR Capsules 25/50/75 mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Gout</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Colchicine Tablets 500/1000mcg</li>
+                      <li>Febuxostat Tablets 40/80/120mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Histamine</li>
+                  </td>
+                  <td>
+                      <li>Desloratadine IR Capsules 5mg</li>
+                      <li>Diphenhydramine Tablets 25/50mg</li>
+                      <li>Fexofenadine IR Capsules 60 mg</li>
+                      <li>Levocetirizine Di HCL IR Capsules 2.5/5mg</li>
+                      <li>Levocetirizine Di HCL IR ODT Tablets 5/10mg</li>
+                      <li>Montelukast Sodium ICW Levocetirizine Dihcl Tablets</li>   
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Retroviral</li>
+                  </td>
+                  <td>
+                      <li>Abacavir 600mg ICW Lamivudine 300mg Tablets</li>
+                      <li>Darunavir Tablets 800/600mg</li>
+                      <li>Didanosine EC Capsule 125/200/250/400mg</li>
+                      <li>Etravirine Tablets 25/100/200mg</li>
+                      <li>Anti - Retroviral | Lopinovir 100/200mg ICW Ritonavir 25/50mg Tablets</li>
+                      <li>Olseltamivir Capsules 75mg</li>
+                      <li>Tenofovir 300mg ICW Emtricitabine 200mg Tablets</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Hypertensive</li>
+                  </td>
+                  <td>
+                      <li>Doxazosine Mesylate IR Tablet 1/2mg & IR/SR 4mg</li>
+                      <li>Moxonidine Tablet 0.2/0.4mg</li>
+                      <li>Carvedilol IR Tablets 3.125/6.25/12.5/25mg</li>
+                      <li> Bisoprolol Capsules 5/10mg</li>
+                      <li> Candesartan Cilexetil Tablets 8/16/32mg</li>
+                      <li>Irbesartan Tablets 150/300mg</li>
+                      <li>Losartan Potassium Tablets 50/100mg Hypertensive</li>
+                      <li> Olmesartan Medoxomil Tablets 20/40mg</li>
+                      <li> Telmisartan Tablets/Capsules 20/40/80mg</li>
+                      <li>Valsartan Tablets 80/160/320mg</li>
+                      <li>ICW</li>
+                      <li>Amlodipine Tablets 5/10mg</li>
+                      <li> Hydrochlorthiazide Tablets 12.5/25mg</li>
+
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Muscarinic </li>
+                  </td>
+                  <td>
+                      <li> Diclofenac Sodium SR Capsule 25/50/100mg</li>
+                      <li>FINISHED PRODUCTS</li>
+                      <li>Flurbiprofen SR/IR Capsules 60/200mg & IR 40mg</li>
+                      <li>Ibuprofen Tablets 200/400/600/800mg</li>
+                      <li>Ketoprofen SR Capsules 150mg</li>
+                      <li>Meloxicam Capsules 7.5/15 mg</li>
+                      <li> Mesalamine SR Capsules 250/500mg</li>
+                      <li>Naproxen Sodium Tablets 250/275/375/500mg</li>
+                      <li>Piridinol Mesylate 4mg ICW Diclofenac SR 50mg Capsules</li>
+                      <li>Piridinol Mesylate 4mg ICW Meloxicam 15mg Capsules</li>
+                      <li>Sumatriptan 85mg ICW Naproxen Tablets 500mg</li>
+                      <li> Thiocolchicoside IR / SR Capsules 4mg</li>
+                      
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                   
+                    <li>Anti - Gout </li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Trimebutine Tablets 100/200/300mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Psoriatic </li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Dimethylfumarate DR Capsules 120mg/240mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Psychotic</li>
+                  </td>
+                  <td>
+                      <li>Fluvoxamine Tablets 100mg</li>
+                      <li>Levosulpride SR Capsules 75mg</li>
+                      <li>Risperidone Tablets 1/2/3mg</li>
+                      
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Obesity</li>
+                  </td>
+                  <td>
+                      <li>Lorcaserin Capsules/Tablets 10mg</li>
+                      <li> Orlistat Capsules 60/120mg</li>
+
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Rheumatic</li>
+                  </td>
+                  <td>
+                      <li>Azathioprine Tablets 100 mg</li>
+                      <li>Celecoxib IR Capsule 50/100/200/400mg</li>
+
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Spasmodic</li>
+                  </td>
+                  <td>
+                      <li> Mebeverine SR Capsules 100/200mg</li>
+                      <li> Pinaverium Bromide IR Capsules 30 mg</li>
+                      <li> Tolteridone L Tartarate SR Capsule 2/4mg</li>
+                      
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Beta - Blockers</li><br>
+                  </td>
+                  <td>
+                      <li>Metoprolol SR Tablets/Capsules 25/50/100mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Pulmonary Disease</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Budesonide Capsules 3mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Erectile Dysfunction</li>
+                  </td>
+                  <td>
+                      <li> Sildenafil Citrate Chewable / Normal / ODT Tablet 50/100mg</li>
+                      <li>Sidanafil Citrate 50/100mg ICW Dapoxetine Tablets 10/20mg</li>
+                      <li>Tadalafil Normal / ODT Tablets 10/20mg</li>
+                      <li>Tadalafil (Omg ICW Dapoxetin Tablets 10/20mg</li>
+                      
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Gastrointestinal (PPI)</li>
+                  </td>
+                  <td>
+                      <li> Dexlansoprazole Capsules 30/60mg</li>
+                      <li> Esomperazole Capsules 20/40mg</li>
+                      <li> Itopride hydrochloride IR Capsules 50mg</li>
+                      <li>  Itopride hydrochloride SR Capsules 150mg</li>
+                      <li> Omeprazole 20/40mg ICW Domperidone IR/SR 10/20mg</li>
+                      <li> Pantoprazole Sodium Capsules 20/40mg</li>
+                      <li> Rabeprazole 10/20mg ICW Domperidone IR/SR Capsules</li>
+                      
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Anti - Retroviral</li>
+                  </td>
+                  <td>
+                      <li>Abacavir 600mg ICW Lamivudine 300mg Tablets</li>
+                      <li>Darunavir Tablets 800/600mg</li>
+                      <li>Didanosine EC Capsule 125/200/250/400mg</li>
+                      <li>Etravirine Tablets 25/100/200mg</li>
+                      <li>Anti - Retroviral | Lopinovir 100/200mg ICW Ritonavir 25/50mg Tablets</li>
+                      <li>Olseltamivir Capsules 75mg</li>
+                      <li>Tenofovir 300mg ICW Emtricitabine 200mg Tablets</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Hyperphosphatemia</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Sevelamer Carbonate Tablets 800mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Immunosupresent</li>
+                  </td>
+                  <td>
+                      <li> Azathioprine Tablets 50/100mg</li>
+                      <li> Everolimus IR Tablets/Capsules 0.25/0.5/0.75/1/5/10mg</li>
+                      <li>Fingolimode Capsules 0.5mg</li>
+                      <li>Mycophenolate Mofetil Capsules 250mg/ 500mg</li>
+                      <li>Mycophenolic Acid DR Capsules/Tablets 180mg/360mg</li>
+                      <li> Tacrolimus IR Capsules 0.5mg/1mg/5mg</li>
+                      <li>Tacrolimus SR Capsules 0.5mg/1mg/5mg</li>
+                      
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Irritable Bowel Syndrome</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Linaclotide IR Capsules 145/290mcg</li>
+                      <li>Pinaverium Bromide Tablets 50/100mg</li>
+
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Nonsteroidal Anti- Inflammatory</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Aspirin 25mg ICW Dipyridamole SR 200mg Capsule</li>
+                      <li>Dipyridamole MR Capsules 200mg</li>
+                      <li>Etoricoxib Tablets 90mg/120mg</li>
+                      <li>Thiocolchicoside IR/SR 8 - 24mg IR/SR ICW Ibuprofen</li>
+                      <li>Thiocolchicoside IR/SR 8 - 24mg ICW Naproxen 250/500mg</li>
+                      
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Osteoporosis</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Raloxifene HCL Tablets 60m</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Overactive Bladder</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Mirabegron Tablets 25/50mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Platelet Aggregation inhibitor</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Cilostazol SR Capsules 50/100 mg </li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Pancreatic</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Pancreatin EC Capsules 10000/25000 </li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Pulmonary Artery Hypertension</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Bosentan Tablet 62.5/125mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Primary Biliary Cirrhosis</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Ursodeoxycholic Acid SR Capsules 450mg</li>
+                      <li> Ursodeoxycholic Acid IR Capsules 150/250/300mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Muscle Relaxant</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Cyclobenzaprine SR Capsules 2.5/5/10 mg</li>
+                      <li> Flavoxate HCI Tablets 200mg</li>
+
+                  <hr>    
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                    <li>Wakefulness Promoting Agent</li>
+                    <br>
+                  </td>
+                  <td>
+                      <li>Armodafinil Tablets 50/150/250mg</li>
+                  <hr>    
+                  </td>
+              </tr>
+
+          </table>
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row" style="margin: 0;padding: 0;margin-top: 3%">
+    <div class="col-lg-12">
+      <div id="p-card" class="card" style="width: 70%">  
+       <p id="type-1" style="  font-family: 'Muli', sans-serif;font-size: 19px;margin-left: 4%;padding: 1%;margin-top: 1%">Approved Under W.H.O , G.M.P. Certificate<span class="heading2" style="position: absolute;right: 3%"><i id="icon3" class="fa fa-plus" style="text-align: right;margin-top: 1%" aria-hidden="true"></i></span></p>
+        <div class="p2">
+          <ul id="medicine-list" style="list-style-type:none;padding: 1%">
+           
+            <tr><td>
+              <li>Norfloxacin Dispersible Tablets <span style="position: absolute;right: 10% ">100 MG</span> </li>
+            <hr></td></tr>
+
+            <tr><td>
+              <li>Norfloxacin Tablet  <span style="position: absolute;right: 10% ">200 MG</span> </li>
+            <hr></td></tr>
+                  
+            <tr><td>
+                <li>Norfloxacin Tablet<span style="position: absolute;right: 10% ">400 MG</span> </li>
+            <hr></td></tr>                                
+            <tr><td>
+                <li>Ceradroxil Oral Suspension <span style="position: absolute;right: 10% ">125 MG</span> </li>
+              <hr></td></tr>
+  
+              <tr><td>
+                <li>Ceradroxil Oral Suspension  <span style="position: absolute;right: 10% ">250 MG</span> </li>
+              <hr></td></tr>
+                    
+              <tr><td>
+                  <li>Cefadroxil Paediatric Drops<span style="position: absolute;right: 10% ">100 MG</span> </li>
+              <hr></td></tr>      
+              <tr><td>
+                  <li>Ceradroxil Tablet I.P <span style="position: absolute;right: 10% ">500 MG</span> </li>
+                <hr></td></tr>
+    
+                <tr><td>
+                  <li>Ceradroxil Dispersible Tablet<span style="position: absolute;right: 10% ">250 MG</span> </li>
+                <hr></td></tr>
+                      
+                <tr><td>
+                    <li>Folic Acid Tablets  <span style="position: absolute;right: 10% ">5 MG</span> </li>
+                <hr></td></tr>      
+                <tr><td>
+                    <li>Metoclopramide Tablet B.P.  <span style="position: absolute;right: 10% ">10 MG</span> </li>
+                  <hr></td></tr>
+      
+                  <tr><td>
+                    <li>Dexamethasone Tablet B.P<span style="position: absolute;right: 10% ">0.5 MG</span> </li>
+                  <hr></td></tr>
+                        
+                  <tr><td>
+                      <li>Norfloxacin Dispersible Tablets <span style="position: absolute;right: 10% ">100 MG</span> </li>
+                  <hr></td></tr>      
+                  <tr><td>
+                      <li>Norfloxacin Tablet <span style="position: absolute;right: 10% ">200 MG</span> </li>
+                    <hr></td></tr>
+        
+                    <tr><td>
+                      <li>Norfloxacin Tablet  <span style="position: absolute;right: 10% ">400 MG</span> </li>
+                    <hr></td></tr>
+                          
+                    <tr><td>
+                        <li>Ceradroxil Oral Suspension  <span style="position: absolute;right: 10% ">125 MG</span> </li>
+                    <hr></td></tr>    
+                    <tr><td>
+                        <li>Ceradroxil Oral Suspension  <span style="position: absolute;right: 10% ">250 MG</span> </li>
+                      <hr></td></tr>
+          
+                      <tr><td>
+                        <li>Cefadroxil Paediatric Drops  <span style="position: absolute;right: 10% ">100 MG</span> </li>
+                      <hr></td></tr>
+                            
+                      <tr><td>
+                          <li>Ceradroxil Tablet I.P <span style="position: absolute;right: 10% ">500 MG</span> </li>
+                      <hr></td></tr>                                
+                      <tr><td>
+                          <li>Ceradroxil Dispersible Tablet <span style="position: absolute;right: 10% ">250 MG</span> </li>
+                        <hr></td></tr>
+            
+                        <tr><td>
+                          <li>Folic Acid Tablets I.P <span style="position: absolute;right: 10% ">5 MG</span> </li>
+                        <hr></td></tr>
+                              
+                        <tr><td>
+                            <li>Metoclopramide Tablet B.P.  <span style="position: absolute;right: 10% ">10 MG</span> </li>
+                        <hr></td></tr>      
+                        <tr><td>
+                            <li>Dexamethasone Tablet B.P  <span style="position: absolute;right: 10% ">0.5 MG</span> </li>
+                          <hr></td></tr>
+              
+                          <tr><td>
+                            <li>Trifluoperazine Tablets B.P<span style="position: absolute;right: 10% ">5 MG</span> </li>
+                          <hr></td></tr>
+                                
+                          <tr><td>
+                              <li>Haloperidol Tablets B.P  <span style="position: absolute;right: 10% ">1.5 MG</span> </li>
+                          <hr></td></tr>      
+                          <tr><td>
+                              <li>Haloperidol Tablets B.P <span style="position: absolute;right: 10% ">5 MG</span> </li>
+                            <hr></td></tr>
+                
+                            <tr><td>
+                              <li>Hyoscine-N-Butylbromidet Tablets B.P <span style="position: absolute;right: 10% ">10 MG</span> </li>
+                            <hr></td></tr>
+                                  
+                            <tr><td>
+                                <li>Carbamazapine Tablets I.P  <span style="position: absolute;right: 10% ">200 MG</span> </li>
+                            <hr></td></tr>      
+                            <tr><td>
+                                <li>Imipramine Tablets I.P  <span style="position: absolute;right: 10% ">25 MG</span> </li>
+                              <hr></td></tr>
+                  
+                              <tr><td>
+                                <li>Amitroptyline Tablets B.P <span style="position: absolute;right: 10% ">25 MG</span> </li>
+                              <hr></td></tr>
+                                    
+                              <tr><td>
+                                  <li>Amitroptyline Tablets B.P<span style="position: absolute;right: 10% ">10 MG</span> </li>
+                              <hr></td></tr>                      
+
+                              <tr><td>
+                                  <li>Carbamezepine Tablets B.P<span style="position: absolute;right: 10% ">400 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Carbamezepine Tablets B.P <span style="position: absolute;right: 10% ">200 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Atenolol Tablets I.P <span style="position: absolute;right: 10% ">25 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Atenolol Tablets I.P <span style="position: absolute;right: 10% ">50 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Paracetamol Tablets B.P <span style="position: absolute;right: 10% ">500 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Serratiopeptidase Tablet<span style="position: absolute;right: 10% ">10 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Serratiopeptidase Tablet<span style="position: absolute;right: 10% ">5 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Ampicillin Capsule B.P<span style="position: absolute;right: 10% ">250 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Ampicillin Capsule B.P <span style="position: absolute;right: 10% ">500 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Amoxycillin Capsules B.P <span style="position: absolute;right: 10% ">250 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Amoxycillin Capsules B.P <span style="position: absolute;right: 10% ">500 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Cloxacillin Capsule B.P <span style="position: absolute;right: 10% ">500 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Cloxacillin & Ampicillin Capsules<span style="position: absolute;right: 10% ">250+250 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Diclofenec Sodium Tablet B.P <span style="position: absolute;right: 10% ">50 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Diclofenec Sodium Tablet B.P <span style="position: absolute;right: 10% ">100 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Diclofenec Sodium Tablet <span style="position: absolute;right: 10% ">25 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Paracetamol & Diclofenec Sodium Tablet <span style="position: absolute;right: 10% ">500+50 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Erythromycin Sterate Tablet B.P <span style="position: absolute;right: 10% ">250 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Erythromycin Sterate Tablet B.P <span style="position: absolute;right: 10% ">500 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Erythromycin Estolate Tablets I.P<span style="position: absolute;right: 10% ">250 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Erythromycin Estolate Tablets I.P <span style="position: absolute;right: 10% ">500 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Griseofulvin Tablets I.P <span style="position: absolute;right: 10% ">250 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Griseofulvin Tablets I.P <span style="position: absolute;right: 10% ">125 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Doxycycline Capsules I.P <span style="position: absolute;right: 10% ">100 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Tetracycline Tablets B.P <span style="position: absolute;right: 10% ">250 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Tetracycline Capsules B.P<span style="position: absolute;right: 10% ">500 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Cephalexin Capsule B.P <span style="position: absolute;right: 10% ">500 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Cephalexin Capsule B.P <span style="position: absolute;right: 10% ">250 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Phenoxymethylpenicillin Tablet B.P <span style="position: absolute;right: 10% ">500,00 IU</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Thioridazine Tablets B.P <span style="position: absolute;right: 10% ">10 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Thioridazine Tablets B.P <span style="position: absolute;right: 10% ">15 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Thioridazine Tablets B.P <span style="position: absolute;right: 10% ">25 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>MG Thioridazine Tablets B.P <span style="position: absolute;right: 10% ">100 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Ranitidine Tablets Usp <span style="position: absolute;right: 10% ">150 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Ranitidine Tablets Usp <span style="position: absolute;right: 10% ">300 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Ciprofloxacin Tablets Usp <span style="position: absolute;right: 10% ">250 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Ciprofloxacin Tablets Usp<span style="position: absolute;right: 10% ">500 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Loperamide Hcl Usp 2 Mg Tablets  <span style="position: absolute;right: 10% ">2 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Trimethoprime & Sulphamethoxazole Tablets B.P <span style="position: absolute;right: 10% ">80+400 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Trimethoprime & Sulphamethoxazole Tablets B.P <span style="position: absolute;right: 10% ">160+800 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Ibuprofen Tablets B.P<span style="position: absolute;right: 10% ">200 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Ibuprofen Tablets B.P <span style="position: absolute;right: 10% ">400 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Mebendazole Tablets B.P <span style="position: absolute;right: 10% ">100 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Metronidazole Tablets B.P <span style="position: absolute;right: 10% ">100 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Metronidazole Tablets B.P <span style="position: absolute;right: 10% ">200 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Metronidazole Tablets B.P <span style="position: absolute;right: 10% ">250 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Metronidazole Tablets B.P <span style="position: absolute;right: 10% ">400 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Nalidixic Acid Tablets B.P <span style="position: absolute;right: 10% ">500 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Nalidixic Acid Tablets B.P <span style="position: absolute;right: 10% ">250 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Albendazole Tablets <span style="position: absolute;right: 10% ">200 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Prednisolone Tablets B.P <span style="position: absolute;right: 10% ">5 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Salbutamol Tablets B.P <span style="position: absolute;right: 10% ">2 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Salbutamol Tablets B.P<span style="position: absolute;right: 10% ">4 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Frusemide Tablet B.P <span style="position: absolute;right: 10% ">40 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Chloroquine Phosphate Tablet Usp <span style="position: absolute;right: 10% ">250 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Diazepam Tablet B.P <span style="position: absolute;right: 10% ">5 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Phenobarbiton Tablets B.P<span style="position: absolute;right: 10% ">10 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Phenobarbiton Tablets B.P<span style="position: absolute;right: 10% ">15 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Phenobarbiton Tablets B.P<span style="position: absolute;right: 10% ">30 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Phenobarbiton Tablets B.P<span style="position: absolute;right: 10% ">60 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Promethazine Hydrochloride Tablet B.P <span style="position: absolute;right: 10% ">25 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Cimetidine Tablets U.S.P<span style="position: absolute;right: 10% ">200 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Cimetidine Tablets U.S.P <span style="position: absolute;right: 10% ">300 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Ferrous Sulphate B.P  <span style="position: absolute;right: 10% ">200 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Alprazolam Tablet U.S.P  <span style="position: absolute;right: 10% ">0.25 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Benzhexol Tablets B.P <span style="position: absolute;right: 10% ">2 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Phenytoin Sodium Tablets B.P  <span style="position: absolute;right: 10% ">100 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Omeprazole Capsule 20  <span style="position: absolute;right: 10% ">20 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Sulfadoxine & Pyrimethamine Tablets U.S.P <span style="position: absolute;right: 10% ">500+25 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Promethazine Hcl Tablets B.P <span style="position: absolute;right: 10% ">40 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Propornolol Tablets B.P <span style="position: absolute;right: 10% ">40 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Pyrazinamide Tablets B.P <span style="position: absolute;right: 10% ">500 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Methyldopa Tablets B.P<span style="position: absolute;right: 10% ">250 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Glibenclamide Tablets B.P  <span style="position: absolute;right: 10% ">5 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>MG Isoniazide Tablets B.P  <span style="position: absolute;right: 10% ">100 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Trazodone Hydrochloride Tablets U.S.P <span style="position: absolute;right: 10% ">25 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Trazodone Hydrochloride Tablets U.S.P <span style="position: absolute;right: 10% ">50 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Clomipramine Hcl Tablet <span style="position: absolute;right: 10% ">25 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Nifedipine 10 Mg Capsule<span style="position: absolute;right: 10% ">10 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Enalapril Maleate Tablets <span style="position: absolute;right: 10% ">10 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>MG Captopril Tablets U.S.P  <span style="position: absolute;right: 10% ">25 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Fluxetine Hcl Capsule U.S.P <span style="position: absolute;right: 10% ">20 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Quinine Sulphate Tablet B.P  <span style="position: absolute;right: 10% ">300 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Amodiaquin Tablet B.P 88<span style="position: absolute;right: 10% ">200 MG</span> </li>
+                              <hr></td></tr> 
+                              <tr><td>
+                                  <li>Leavmisole Hydrochloride Tablets U.S.P <span style="position: absolute;right: 10% ">40 MG</span> </li>
+                              <hr></td></tr> 
+
+                              <tr><td>
+                                  <li>Chlorpheniramine Maleate Tablet B.P  <span style="position: absolute;right: 10% ">4 MG</span> </li>
+                              <hr></td></tr> 
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row" style="margin: 0;padding: 0;margin-top: 3%">
+    <div class="col-lg-12">
+      <div id="p-card" class="card" style="width: 70%">  
+       <p id="type-1" style="  font-family: 'Muli', sans-serif;font-size: 19px;margin-left: 4%;padding: 1%;margin-top: 1%">Veterinary Product<span class="heading3" style="position: absolute;right: 3%"><i id="icon4" class="fa fa-plus" style="text-align: right;margin-top: 1%" aria-hidden="true"></i></span></p>
+        <div class="p3">
+          <ul id="medicine-list" style="list-style-type:none;padding: 1%">
+              <tr><td>
+                  <li>Albendazole 150 mg / 10x10’s Blister </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Albendazole 600 mg./ 15x2’s Blister </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Albendazole 25 mg. (Albendazole Suspension 2.5% w/v.) / 30 ml. Pet Bottle/ 90 ml. Pet <br> Bottle/ 1 Lit.Pet Bottle </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Albendazole 50 mg. (Albendazole Suspension 2.5% w/v.) / 30 ml. Pet Bottle/ 90 ml. Pet <br> Albendazole 5% w/w./ 100 gm. Pouch</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Albendazole 15% w/w./ 100 gm. Pouch.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Chlorpheniramine Maleate.10 mg. / 30 ml. Vial <br> Water for Injection: Q.S. </li>
+              <hr></td></tr> 
+              
+              <tr><td>
+                  <li>Albendazole 300 mg. / 10x1’s Strip <br> Praziquantel 25 mg. </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Antimony Potassium Tartrate 2 gm./ 50’s Box <br> Ferrous Sulphate 2 gm.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Antimony Potassium Tartrate U.S.P. 2 gm. / 5x4’s Strip
+                    <br> Ferrous Sulphate - 2 gm.
+                      <br>  Copper Sulphate Anhydrous - 50mg
+                    <br>  Cobalt Chloride B.Vet.C - 100 mg.
+                      </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Ampicillin Sodium. 2 gm. Vial
+                    <br> Equivalent to Anhydrous Ampicillin 1 gm.
+                    <br> Cloxacillin Sodium Equivalent to Cloxacillin 1 gm.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Ampicillin Sodium 2.5 gm. Vial 
+                   <br> Equivalent to Anhydrous Ampicillin 1.25 gm.
+                   <br> Cloxacillin Sodium Equivalent to Cloxacillin 1.25 gm.
+                    </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Silica in Dimethicone B.Vet.C. 1% w/v/ 100 ml. Pet Bottle 
+                    <br> Arachis Oil- 10% v/v.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Ascorbic Acid 250 mg./ 30 mi. Vial <br> (As Sodium Ascorbate.)</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Neomycin Sulphate 50 gm. Bottle <br>
+                     Equivalent to Neomycin 10% wiw. <br> Doxycycline Hydrochloride 10% wiw.
+                    </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Vitamin C 50% w/w/ 100 gm. Pouch / 500 gm. Pouch</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Oxyclozanaide B.P.(Vet) 1 gm./ 5x10’s Blister </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Oxyclozanide B.P.(Vet) 3.4% wiv. / 100 ml.Pet Bottle / 1 Litre Jar</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Oxyclozanide B.P.(Vet) 200 mg./ 10x10’s Blister </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Each 100 gm. contains 50 gm. Pouch / 250 gm. Pouch / 1 Kg. Bag. <br>
+                     Sodium Chloride 0.800 gms.
+                     <br> Potassium Chloride 5.000 gms. 
+                     <br> Sodium Bicarbonate 3.000 gms.
+                     <br> Sodium Acid Phosphate 0.800 gms.
+                     <br>  Sodium Citrate 6.500 gms.
+                     <br>  Calcium Lactate 1.700 gms.
+                     <br>  Magnesium Sulphate 1.000 gms.
+                     <br> Lactose 25.000gms
+                     <br>  Ascorbic Acid (coated) 1.200 gms
+                       </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Fenbendazole 150 mg / 10x10’s Strip</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Fenbendazole 1500 mg / 5x4’s Strip</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Fenbendazole B.P.(Vet) 2000 mg / 5x10’s Blister</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Fenbendazole 25% wi/w./ 6 gm. Pouch</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Rafoxanide B.P.(Vet) 20% w/w /50 gm.Bottle</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Rafoxanide B.P.(Vet) 3% wiv.) /100 ml. Bottle / 1 Litre Jar</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Rafoxanide B.P.(Vet) 1.5% w/v. / 100 ml. Bottle/ 1 Litre Jar <br>
+                     Levamisole Hcl. B.P. (Vet) 1.5% w/v.
+                    </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Rafoxanide B.P.(Vet) 3% wiv. / 100 ml. Bottle/ 1 Litre Jar <br>
+                     Levamisole Hcl. (B.P.(Vet) 1.5% w/v.
+                    </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Levamisole Hcl. |.P. 500 mg./ 10x5’s Blister <br>
+                     Oxyclozanide B.P.(Vet) 1 gm. </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Levamisole Hcl. |.P. 1.5% w/v./ 100 ml.Bottle <br>
+                     Oxyclozanide B.P. (Vet) 3% wiv.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Each bolus contains: 5x4’s Strips 
+                    <br> Cobalt 0.056 gms.
+                    <br>  Copper 0.7 gms.
+                    <br>  lodine 0.140 gms.
+                    <br>  Iron 1.4 gms.
+                    <br>  Manganese 0.56 gms.
+                    <br>  Selenium 0.004 gms.
+                    <br>  Vitamin E 0.1 gms.
+                    <br>  Zinc 0.28 gms
+                      </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Gamma Benzene Hexachloride Proflavine Hemisulphate B.Vet.C. / 100 Gm. Tube 
+                   <br> Gamma Benzene Hexachloride 85 0.1% wiw. <br>
+                    Proflavine Hemisulphate 0.1% wiw.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Gamma Benzene Hexachloride 85 . 0.1% w/w. / 30 gm. Tube / 100 gm. Tube
+                    <br> Proflavine Hemisulphate . 0.1% w/w.
+                    <br> Cetrimide . 0.5% wiw.
+                  </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Each ml. contains : Vitamin BZ 5mg. <br>
+                      Vitamin B6 =5mg. <br>
+                       Niacinamide 100 mg.<br>
+                        D.L.Panthenol 10mg.<br>
+                         Inositol 2 mg. Methionine 5 mg.<br>
+                      Liver Injection Crude 0.6 ml.
+                      </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Hexachloroethane Dispersible 30 gm. Pouch /500 gm. Box 
+                    <br>  Powder B.Vet.C. 85% w/w.
+                  </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Each ml. contains : 30 ml. Vial <br> Calcium Levulinate 76.4 mg. <br> Vitamin B12 50 mg.
+                      Vitamin D3 5000 1.U. <br> Water for Injection Q.S.
+                      </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Calcium 25 gm. <br> Phosphorus 16 gm. Vitamin A 100000 IU <br>
+                    Vitamin D3 10000 IU<br> Vitamin E 50 IU Copper 100 mg.
+                    <br> Cobalt 20mg. <br>Manganese 120mg. <br>lodine 50mg.<br>
+                      Zinc 100 mg.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Chlorhexidine Gluconate Solution . 0.1% w/w./ 250 gm. Jar <br> Cetrimide I.P. 0.5% wiw.
+                    </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>AChlorhexidine Gluconate Solution. 1.5% v/v./ 100 ml.Pet Bottle /1 Litre Bottle Cetrimide 3% w/v. 
+                    <br> Isopropyl Alcohol 3-5% v/v.
+                    </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Chlorhexidine Gluconate Solution 7.5% v/v./ 100 ml.Pet Bottle <br>
+                     /1 Litre Bottle Cetrimide 15% wiv. <br> Isopropyl Alcohol 6-8% v/v.
+                    </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Levamisole Hcl. B.P. 30% w/w. /100 gm.Pouch </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Each vial contains: 2 gm. Vial <br> 
+                    Amoxycillin Sodium Equivalent to Anhydrous Amoxycillin 1 gm. <br> Cloxacillin Sodium Equivalent to Cloxacillin 1 gm.
+                    </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Each bolus contains: 50’s_ Box <br> Metronidazole 1 gm. <br> Furazolidone 200 mg.
+                    </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Enrofloxacin 100 mg./2 ml. Vial /15 ml. Vial / 90 ml. Vial </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Enrofloxacin 10% wiv. / 100 ml. Bottle /500 ml. Bottle /1 Litre Bottle </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Levamisole Hcl. 75 mg./ 30 ml. Vial</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Nitrofurazone (Vet) 60 mg. /5x4’s Strip /50’s Box <br> Urea 6 gm. </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Nitrofurazone |.P.(Vet) 60 mg. / 5x4’s Strip Urea I.P. 5.0 gm. <br> Metronidazole |.P. 1.0 gm.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Streptomycin Sulphate |.P. 250 mg. /10x10’s Strip <br>
+                     Neomycin Sulphate _ I.P. 100 mg. <br> VitaminA — 1.P. 25000 IU
+                    </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Niclosamide (Vet) 75% w/w. /50 gm. Bottle</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Povidone lodine |.P. 5% w/v. / 100 ml. Bottle /500 ml. Bottle (0.5% w/v. available lodine)</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Povidone lodine |.P. 10% w/v. /500 ml. Bottle (1% w/v. available lodine)</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Povidone lodine |.P. 5% w/w. / 100 gm. Tube / 250 gm.Jar (0.5% w/w. available lodine)</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Povidone lodine |.P. 5% w/w. /15 gm. Tube (0.5% w/w. available lodine)</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Each bolus contains: 5x4’s Strip §Phthalylsulphathiazole 1.0 gm.
+                    <br> Pectin N.F. 75 mg.
+                    <br> Kaolin Light 3.0 gm.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Phthalylsulphathiazole 1.0 gm./ 100 ml. Bottle / 1 Litre Bottle Pectin N.F. 0.150 gm. 
+                    <br> Kaolin Light 3.0 gm.
+                    </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Praziquantel U.S.P. 50 mg. / 10x10’s Strip</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Each tablet contains: 10x1’s Strip
+                    <br> Praziquantel 50 mg.
+                    <br> Pyrantel Pamoate . 144 mg.
+                     <br> Fenbendazole (Vet) 500 mg.
+                      </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Diclofenac Sodium _I.P. 25 mg. /10 ml. Vial / 30 ml. Vial/ 100 mlI.Vial <br>
+                     Benzyl Alcohol |.P. 4% VIN. <br>
+                      Water for Injection Q.S.
+                      </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Each ml. contains: 10 ml. Vial / 30 ml. Vial <br>
+                      Diclofenac Sodium 25 mg. <br>
+                       Paracetamol 150 mg. <br> Benzyl Alcohol 4% v/v. <br>
+                      Water for Injection QS,
+                      </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Diclofenac Sodium 250 mg. / 5x4’s Strip <br> Paracetamol 1.5 gm.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Dicyclomine Hydrochloride |.P. 10mg. /30 ml. Vial</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Tetramisole Hydrochloride .(Vet) 3% w/v) / 100 ml. Bottle / 1 Litre Jar <br>
+                     Oxyclozanide B(Vet) 3% w/v.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Trimethoprim 2% w/w./ 100 ml.Bottle <br> Sulphadiazine 10% w/w. </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Trimethoprim . 200 mg. 50’s Box <br> Sulphadiazine 1 gm.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Trimethoprim 400 mg. / 5x4’s Strip <br> Sulphamethoxazole 2 gm.</li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Trimethoprim . 100 mg / 5x4’s Strip <br> Sulphamethoxazole 500mg. Urea 6 gm. </li>
+              <hr></td></tr> 
+              <tr><td>
+                  <li>Levamisole Hcl. B.P. 30% w/w. 50 gm. Bottle </li>
+              <hr></td></tr> <tr><td>
+                  <li>Ivermectin 1% w/v. / 1 ml. Vial/ 7 ml. Vial /20 mi.Vial</li>
+              <hr></td></tr> 
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$("#icon1").click(function() {
+    $(this).toggleClass('fa fa-plus fa fa-minus'); 
+    
+});
+$("#icon2").click(function() {
+    $(this).toggleClass('fa fa-plus fa fa-minus'); 
+    
+});
+$("#icon3").click(function() {
+    $(this).toggleClass('fa fa-plus fa fa-minus'); 
+    
+});
+$("#icon4").click(function() {
+    $(this).toggleClass('fa fa-plus fa fa-minus'); 
+    
+});
+</script>
+
+
+  <script>
+     document.querySelector('.heading').addEventListener('click', function() {
+    document.querySelector('.p').classList.toggle('show');
+}, false);
+      </script>
+      <script>
+      document.querySelector('.heading1').addEventListener('click', function() {
+     document.querySelector('.p1').classList.toggle('show');
+ }, false);
+       </script>
+
+<script>
+    document.querySelector('.heading2').addEventListener('click', function() {
+   document.querySelector('.p2').classList.toggle('show');
+}, false);
+     </script>
+     <script>
+        document.querySelector('.heading3').addEventListener('click', function() {
+       document.querySelector('.p3').classList.toggle('show');
+    }, false);
+         </script>
+      <script>
+      $(".heading").click(function(){
+  $(".p").slideToggle();
+});
+      </script>
+</div>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<div id="footer" style="background-color: #164553 ;padding-top: 2%;">
+        <div class="row" style="margin: 0;padding: 0">
+            <div class="col-lg-3">
+                <p style="font-size: 18px;color: #f4f4f4;font-family: 'Roboto', sans-serif;">Inovora Resourced Pvt Ltd</p>
+                <p style="font-size: 15px;font-family: 'Roboto', sans-serif;color: #f4f4f4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis reiciendis nostrum enim possimus nihil, minus ab omnis animi reprehenderit voluptatibus distinctio sequi vitae incidunt deserunt, ratione sint eaque! Magnam, dicta?</p>
+            </div>
+          <div class="col-lg-3" style="padding: 1%">
+            
+           <ul style="list-style-type: none;color: #f4f4f4;font-family: 'Roboto', sans-serif;">
+              <li style="font-size: 18px;text-decoration: underline;text-underline-position: under;margin-bottom: 2%">Geographic Presence</li>
+             <li style="font-size: 15px">Middle East Countries</li>
+             <li style="font-size: 15px">Myanmar</li>
+             <li style="font-size: 15px">Srilanka</li>
+             <li style="font-size: 15px">Egypt</li>
+             <li style="font-size: 15px">West Africa</li>
+             <li style="font-size: 15px">Ivory Coast</li>
+           </ul>
+          </div>
+          
+            <div class="col-lg-3"  style="padding: 1%">
+                <ul style="list-style-type: none;color: #f4f4f4;font-family: 'Roboto', sans-serif;">
+                    <li style="font-size: 18px;text-decoration: underline;text-underline-position: under;margin-bottom: 2%">Pages</li>
+                   <li style="font-size: 15px">Home</li>
+                   <li style="font-size: 15px">Products</li>
+                   <li style="font-size: 15px">About Us</li>
+                   <li style="font-size: 15px">Contact</li>
+                 </ul>
+              </div>
+              <div class="col-lg-3"  style="padding: 1%">
+                  <ul style="list-style-type: none;color: #f4f4f4;font-family: 'Roboto', sans-serif;">
+                      <li style="font-size: 18px;text-decoration: underline;text-underline-position: under;margin-bottom: 2%">Social Media</li>
+                     <li style="font-size: 15px">Facebook</li>
+                     <li style="font-size: 15px">Instagram</li>
+                     <li style="font-size: 15px">Twitter</li>
+                     <li style="font-size: 15px">Gmail</li>
+                   </ul>
+                </div>
+        </div> 
+        <br>
+        <div class="row" style="margin: 0;padding: 0;background-color: #1b4b5a">
+        <div class="col-lg-6"  style="padding: 1%"> 
+          <br>
+          <p style="font-family: 'Roboto', sans-serif;font-size: 16px;color: white">&#169; Inovora Resources Pvt Ltd</p>
+        </div>
+        <div class="col-lg-6">
+          <br>
+            <p style="font-family: 'Roboto', sans-serif;font-size: 13px;text-align: right;color: white">made by pixsonik</p>
+          </div>
+        </div>
+        </div>
+            </div>
+        </body>
+        </html>

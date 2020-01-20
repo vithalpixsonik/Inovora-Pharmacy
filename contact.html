@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pharmacy  Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<style>
+
+</style>
+</head>
+<body>
+    <div id="main">
+
+        <!-- menubar -->
+        <!-- menubar -->
+        <div id="menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: transparent !important"> 
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="width: 30%" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav" style="margin-left: 60%">
+                    <li class="nav-item" id="link">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item" id="link">
+                      <a class="nav-link" href="product.html">Products</a>
+                    </li>
+                    <li class="nav-item" id="link">
+                      <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item active" id="link">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+<script>
+    $(window).scroll(function() {
+                    if ($(document).scrollTop() > 50) {
+                        $('#menu').css('background-color','#fafafa');
+                    } else {
+                      $('#menu').css('background-color','transparent');
+                    }
+                });
+    </script>
+</div>
+<!-- Menubar End -->
+
+        </div>
+<script>
+    $(window).scroll(function() {
+                    if ($(document).scrollTop() > 50) {
+                        $('#menu').css('background-color','#fafafa');
+                    } else {
+                      $('#menu').css('background-color','#fff');
+                    }
+                });
+    </script>
+
+<!-- Menubar End -->
+<div id="fixed-navbar" style="position: fixed;top: 0;z-index: 10;height: 60px;width: 100%;margin: 0;padding: 0">
+    <a href="index.html"> <img src="img/logo.png" style="width: 32%;margin-top: 2%;margin-left: 5%" alt=""></a>
+     
+     <div id="mySidenav" class="sidenav">
+             
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                     <a href="index.html" id="homes">Home</a>
+                     <a href="product.html" id="do">Products</a>
+                     <a href="about.html" id="abt">About Us</a>
+                     <a href="contact.html" id="contact">Contact</a>
+                   </div>
+                   
+                   <span id="hamburger" style="font-size:30px;cursor:pointer;position:fixed;right:5%;color: black;top: 2%" onclick="openNav()">&#9776;</span>
+                   
+                   <script>
+                   function openNav() {
+                     document.getElementById("mySidenav").style.width = "250px";
+                   }
+                   
+                   function closeNav() {
+                     document.getElementById("mySidenav").style.width = "0";
+                   }
+                   </script>
+                   <script>
+                   $(window).scroll(function() {    
+                     var scroll = $(window).scrollTop();
+                     if (scroll >= 50) {
+                             $("#fixed-navbar").addClass("bg");
+                     }
+                     else{
+                             $("#fixed-navbar").removeClass("bg");
+                     }
+                     });
+                   </script>
+</div>
+
+<!-- Banner -->
+
+
+   <!-- Contact Details -->
+
+    <div id="contact" style="margin-top: 5%">
+        <div class="row" style="margin: 0;padding: 0">
+            <div class="col-lg-12" >
+           <center> <img src="img/logo.png" id="in-logo"  style="width: 17%" alt="">
+           <p style="font-family: 'Roboto', sans-serif;text-align: center;width: 60%;margin-top: 2%">Inovora Resources is an integrated growing health care company established with the purpose of serving the community, is aiming to become one of the fastest growing pharmaceutical export company in India.
+            </p></center>
+        </div>
+        </div>
+
+   <center><div class="row" style="margin: 0%;padding: 0;margin-top: 5%;width: 90%">
+            <div class="col-lg-4"  style="margin: 0;padding: 2%">
+                <div id="card">
+              <center>  <img src="img/call.png" style="width: 8%;transform: rotate(-2deg)" alt=""><br><br>
+            <span  style="font-family: 'Roboto', sans-serif;">+91 98197 11347</span><br>
+            <span style="font-family: 'Roboto', sans-serif;">+91 99670 67316</span><br>
+            <span style="font-family: 'Roboto', sans-serif;">+91 98208 55955</span>
+            <p style="font-family: 'Roboto', sans-serif;"></p>
+            </center>
+            </div>
+            </div>
+            <div class="col-lg-4" style="margin: 0;padding: 2%">
+                    <div id="card"><center>  <img src="img/location.png" style="width: 8%;transform: rotate(-2deg)" alt=""><br><br>
+                        <span  style="font-family: 'Roboto', sans-serif;">Vallabh Society, New Pant Nagar, </span><br>
+                        <span style="font-family: 'Roboto', sans-serif;">90ft Road, Ghatkopar (E), </span><br>
+                        <span style="font-family: 'Roboto', sans-serif;">Mumbai - 400 075</span>
+                        </center></div> 
+            </div>   
+            <div class="col-lg-4" style="margin: 0;padding:2%">
+                    <div id="card">  <center>  <img src="img/msg.png" style="width: 10%" alt=""><br><br>
+                        <span style="font-family: 'Roboto', sans-serif;">business@inovora.co.in</span>  
+                        </center></div> 
+            </div> 
+             
+                
+              
+        </div></center> 
+
+    </div>
+
+<!-- Form -->
+
+  <div id="form" style="margin-top: 7%;margin-bottom: 5%">
+    <div class="row" style="width: 100%;margin: 0;padding: 0">
+      <div class="col-lg-1"></div>
+     
+
+    <div class="col-lg-5">
+     <div id="follow-us">
+      <p id="contact-head1" style="font-family: 'Muli', sans-serif;font-size: 19px">Follow Us On</p>
+      <img src="img/fb.png" style="width: 5%"  alt="">
+      <span style=" font-family: 'Roboto Condensed', sans-serif;font-size: 17px">www.facebook.com/inovora</span>
+      <br><br>
+      <img src="img/insta.png" style="width: 5%"  alt="">
+      <span style=" font-family: 'Roboto Condensed', sans-serif;font-size: 17px">www.instagram.com/inovora</span>
+      <br><br>
+      <img src="img/twitter.png" style="width: 5%"  alt="">
+      <span style=" font-family: 'Roboto Condensed', sans-serif;font-size: 17px">www.twitter.com/inovora</span>
+    </div></div>
+
+
+    <div class="col-lg-5">
+       
+      <form action="" id="desktop-form">
+          <p style="font-family: 'Muli', sans-serif;font-size: 19px">Contact Us</p><br>
+        <input type="text" style="padding: 1%;color: #164553" name="name" placeholder="Name" id="">
+        <input type="text" style="padding: 1%;color: #164553" name="email" placeholder="Email" id="">
+        <br>
+        <textarea name="" style="padding: 1%;margin-top: 1%;color: #164553" id="" placeholder="Your Message" cols="50" rows="5"></textarea>
+        <br>
+        <button class="btn btn-default" id="submit-button" style="">Submit</button>
+      </form>
+
+
+      <form action="" id="mobile-form">
+              <br>          
+        <center>  
+            <p style="font-family: 'Muli', sans-serif;font-size: 19px;text-align: center;margin-top: 10%">Contact Us</p><br>
+          <input type="text" name="name" style="width: 80%" id="name" placeholder="Name">
+          <br><br>     
+          <input type="email" name="email" style="width: 80%" id="email" placeholder="Email">
+          <br><br>       
+          <textarea name="message" style="width: 80%" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+          <br><br>
+          <br>
+          <button id="mob-submit-btn" class="btn btn-default" id="submit-button" style="">Submit</button></center>
+  </form>
+    </div>
+    <div class="col-lg-1"></div>
+
+    </div>
+  </div>
+
+<!-- Footer -->
+<div id="footer" style="background-color: #164553 ;padding-top: 2%;">
+    <div class="row" style="margin: 0;padding: 0">
+        <div class="col-lg-3">
+            <p style="font-size: 18px;color: #f4f4f4;font-family: 'Roboto', sans-serif;">Inovora Resourced Pvt Ltd</p>
+            <p style="font-size: 15px;font-family: 'Roboto', sans-serif;color: #f4f4f4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis reiciendis nostrum enim possimus nihil, minus ab omnis animi reprehenderit voluptatibus distinctio sequi vitae incidunt deserunt, ratione sint eaque! Magnam, dicta?</p>
+        </div>
+      <div class="col-lg-3" style="padding: 1%">
+        
+       <ul style="list-style-type: none;color: #f4f4f4;font-family: 'Roboto', sans-serif;">
+          <li style="font-size: 18px;text-decoration: underline;text-underline-position: under;margin-bottom: 2%">Geographic Presence</li>
+         <li style="font-size: 15px">Middle East Countries</li>
+         <li style="font-size: 15px">Myanmar</li>
+         <li style="font-size: 15px">Srilanka</li>
+         <li style="font-size: 15px">Egypt</li>
+         <li style="font-size: 15px">West Africa</li>
+         <li style="font-size: 15px">Ivory Coast</li>
+       </ul>
+      </div>
+      
+        <div class="col-lg-3"  style="padding: 1%">
+            <ul style="list-style-type: none;color: #f4f4f4;font-family: 'Roboto', sans-serif;">
+                <li style="font-size: 18px;text-decoration: underline;text-underline-position: under;margin-bottom: 2%">Pages</li>
+               <li style="font-size: 15px">Home</li>
+               <li style="font-size: 15px">Products</li>
+               <li style="font-size: 15px">About Us</li>
+               <li style="font-size: 15px">Contact</li>
+             </ul>
+          </div>
+          <div class="col-lg-3"  style="padding: 1%">
+              <ul style="list-style-type: none;color: #f4f4f4;font-family: 'Roboto', sans-serif;">
+                  <li style="font-size: 18px;text-decoration: underline;text-underline-position: under;margin-bottom: 2%">Social Media</li>
+                 <li style="font-size: 15px">Facebook</li>
+                 <li style="font-size: 15px">Instagram</li>
+                 <li style="font-size: 15px">Twitter</li>
+                 <li style="font-size: 15px">Gmail</li>
+               </ul>
+            </div>
+    </div> 
+    <br>
+    <div class="row" style="margin: 0;padding: 0;background-color: #1b4b5a">
+    <div class="col-lg-6"  style="padding: 1%"> 
+      <br>
+      <p style="font-family: 'Roboto', sans-serif;font-size: 16px;color: white">&#169; Inovora Resources Pvt Ltd</p>
+    </div>
+    <div class="col-lg-6">
+      <br>
+        <p style="font-family: 'Roboto', sans-serif;font-size: 13px;text-align: right;color: white">made by pixsonik</p>
+      </div>
+    </div>
+    </div>
+            </div>
+        </body>
+        </html>
